@@ -1,0 +1,73 @@
+# Ignore Mac system files
+.DS_Store
+
+# Ignore Linux system files
+.Trash-*
+
+# Ignore Windows system files
+Thumbs.db
+desktop.ini
+
+# Ignore node_modules and package-lock.json for Node.js projects
+node_modules/
+package-lock.json
+
+# Ignore logs
+*.log
+*.log.*
+
+# Ignore Visual Studio Code files
+.vscode/
+
+# Ignore build directories
+build/
+bin/
+obj/
+
+# Ignore compiled object files
+*.o
+*.a
+*.so
+*.exe
+*.dll
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.swp
+*~
+
+# Ignore backup files
+*.bak
+*.old
+*.orig
+
+# Ignore generated files
+*.d
+*.dSYM/
+*.pdb
+
+# Ignore CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Ignore specific files
+a.out
+a.exe
+
+# Ignore configuration files
+*.config
+
+# Ignore dependency directories
+.deps/
+.libs/
+
+# Ignore IDE project files
+*.vcxproj
+*.sln
+
+# Ignore other build tools
+.idea/
+*.iml
