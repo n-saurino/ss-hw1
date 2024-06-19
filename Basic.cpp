@@ -2,6 +2,7 @@
 #include <vector>
 #include <iostream>
 #include <numeric>
+#include <sstream>
 
 /*
 - Write a basic C++ program that performs the following:
@@ -12,10 +13,24 @@
 
 void ExecuteBasic(){
     std::vector<int> input_vec;
-    int user_input;
+    std::string input;
+
     std::cout << "Enter number (q to quit): ";
-    while(std::cin >> user_input){
-        input_vec.push_back(user_input);
+
+    while(true){
+        std::getline(std::cin, input);
+
+        if(input == "q"){
+            break;
+        }
+
+        std::stringstream ss(input);
+        int user_input;
+        if(ss >> user_input){
+            input_vec.push_back(user_input);
+        } else{
+            std::cout << "Invalid input!" << std::endl;
+        }
     }
 
     long long sum = accumulate(input_vec.begin(), input_vec.end(), 0);
